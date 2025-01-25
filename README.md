@@ -82,12 +82,12 @@ Our prompt system uses a sophisticated AI-powered approach:
 ## Setup
 
 1. Clone the repository and install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
-2. Create a \`.env\` file with the following variables:
-\`\`\`env
+2. Create a `.env` file with the following variables:
+```env
 VITE_GEMINI_API_KEY=your_gemini_api_key_here
 VITE_NFT_STORAGE_KEY=your_nft_storage_key_here
 VITE_CHAIN_ID=11155111
@@ -97,27 +97,27 @@ VITE_NETWORK_NAME=Sepolia
 INFURA_API_KEY=your_infura_api_key_here
 PRIVATE_KEY=your_wallet_private_key_here
 ETHERSCAN_API_KEY=your_etherscan_api_key_here
-\`\`\`
+```
 
 3. Compile the smart contract:
-\`\`\`bash
+```bash
 npm run compile
-\`\`\`
+```
 
 4. Deploy the contract to Sepolia:
-\`\`\`bash
+```bash
 npm run deploy:sepolia
-\`\`\`
+```
 
-5. Update the \`.env\` file with the deployed contract address:
-\`\`\`env
+5. Update the `.env` file with the deployed contract address:
+```env
 VITE_CONTRACT_ADDRESS=your_deployed_contract_address
-\`\`\`
+```
 
 6. Start the development server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 ## Smart Contract
 
@@ -130,10 +130,10 @@ The PromrawERC7007 contract extends the ERC721 standard with additional features
 
 ### Contract Functions
 
-- \`mint(string tokenURI, string aiModelVersion, string prompt, uint256 score)\`: Mint a new NFT
-- \`getAIModelVersion(uint256 tokenId)\`: Get the AI model used
-- \`getPrompt(uint256 tokenId)\`: Get the original prompt
-- \`getScore(uint256 tokenId)\`: Get the AI-generated score
+- `mint(string tokenURI, string aiModelVersion, string prompt, uint256 score)`: Mint a new NFT
+- `getAIModelVersion(uint256 tokenId)`: Get the AI model used
+- `getPrompt(uint256 tokenId)`: Get the original prompt
+- `getScore(uint256 tokenId)`: Get the AI-generated score
 
 ## Usage
 
@@ -159,12 +159,12 @@ The PromrawERC7007 contract extends the ERC721 standard with additional features
 
 ## Development
 
-- \`npm run dev\`: Start development server
-- \`npm run build\`: Build for production
-- \`npm run preview\`: Preview production build
-- \`npm run compile\`: Compile smart contracts
-- \`npm run deploy:sepolia\`: Deploy to Sepolia
-- \`npm run verify:sepolia\`: Verify contract on Etherscan
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run preview`: Preview production build
+- `npm run compile`: Compile smart contracts
+- `npm run deploy:sepolia`: Deploy to Sepolia
+- `npm run verify:sepolia`: Verify contract on Etherscan
 
 ## Contributing
 
